@@ -1,7 +1,24 @@
 aid: cansinotech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cansinotech.png
 name: cansinotech
-description: cansinotech is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'CanSino Biologics (康希诺生物, cansinotech.com.cn / cansinotech.com) is a Tianjin-based
+  Chinese biopharmaceutical company founded in 2009 and dual-listed on the Hong Kong and Shanghai
+  (STAR) exchanges. It researches, manufactures, and commercializes human vaccines across five
+  proprietary technology platforms, with a portfolio covering COVID-19, meningococcal, pneumococcal,
+  tuberculosis, Ebola, and DTcP indications. Surfaced as a portfolio company of Qiming Ventures and
+  added to the API Evangelist network. As of this enrichment pass the company publishes no public
+  API, developer portal, SDKs, or technical documentation; only its corporate web presence was found.'
 url: https://raw.githubusercontent.com/api-evangelist/cansinotech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biopharmaceuticals
+- Vaccines
+- Healthcare
+- Life Sciences
+- Biotechnology
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cansinotech-domain-security.yml
 - type: Website
   url: https://cansinotech.com.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
